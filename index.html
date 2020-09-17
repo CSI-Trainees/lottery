@@ -1,28 +1,41 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-	<title>loterry</title>
-	<style >
-		.button{
-			align-items: center;
-		}
-		.flex{
-			display: flex;
-			display: inline-block;
-			flex-direction: column;
-			justify-content: center;
-		}
-	</style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="style.css">
+  <title>Random Number Generator</title>
 </head>
 
 <body>
-	<section class="flex">
-	<button class="button" onclick="myfun()">
-		GENERATE
-	</button>
+  <header>
+    <h1>Random Number Generator</h1>
+  </header>
+
+  <section>
+  
+    
    
-	</section>
- <script src="index.js"></script>
- </div>
+    <button type="submit" class="generateBtn">Generate</button>
+    <asp:button class="generateBtn" Runat="server" number="submit" onClientClick="DoOnSubmit()"></asp:button>
+    <div>
+    <h1 class="randomNumEl"></h1>
+  </div>
+  <br>
+  <br>
+    <label >ENTER YOUR NUMBER:</label>
+
+    
+    <input type="number" class="enterNum"
+      placeholder="enter your number here">
+
+  </section>
+
+  
+
+  <script src="index.js"></script>
 </body>
+
 </html>
