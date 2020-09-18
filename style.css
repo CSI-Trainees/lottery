@@ -49,3 +49,17 @@ section button:hover {
   width: 90%;
   margin: 20px auto;
 }
+.dark-mode{
+  filter:invert(1) hue-rotate(180deg);
+}
+.winnerimg{
+  border:black 2px solid;
+  border-radius: 50%;
+  background-size: cover;
+}
+#image1{
+animation: spin 1.5s linear infinite;
+}
+@keyframes spin{
+  100%{transform:rotate(360deg);}
+}

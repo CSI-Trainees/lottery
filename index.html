@@ -11,7 +11,7 @@
 
 <body>
   <header>
-    <h1>Random Number Generator</h1>
+    <h1>TRY YOUR LUCK HERE !!</h1>
   </header>
 
   <section>
@@ -19,7 +19,6 @@
     
    
     <button type="submit" class="generateBtn">Generate</button>
-    <asp:button class="generateBtn" Runat="server" number="submit" onClientClick="DoOnSubmit()"></asp:button>
     <div>
     <h1 class="randomNumEl"></h1>
   </div>
@@ -29,10 +28,12 @@
 
     
     <input type="number" class="enterNum"
-      placeholder="enter your number here">
-
+      placeholder="enter your number here"  >
+      <button type="submit" class="enterNumBtn">Enter </button>
   </section>
-
+<div class="winnerimg">
+  <img src="images/img.jfif" id="image1">
+</div>
   
 
   <script src="index.js"></script>
