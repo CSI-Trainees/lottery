@@ -1,42 +1,153 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html>
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" href="style.css">
-  <title>Random Number Generator</title>
+	 <meta name="viewport" content="width=device-width">
+	<meta charset="utf-8">
+	<title>loterry</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
 </head>
-
 <body>
-  <header>
-    <h1>TRY YOUR LUCK HERE !!</h1>
-  </header>
+	<section id="nav-bar" class="container" >
+     <header class="nav-bar">
+         <div class="smiley"><!--brand-->
+             <h1 ><img src="images/setting.png" class="rotate"></h1>
+         </div>
+         <div class="nav-list">
+             <div class="hamburger">
+                <div class="bar"></div> 
+             </div>
+             <ul>
+                 <li><a href="#steps">Steps</a></li>
+                 <li><a href="#lottery">Play lottery</a></li>
+                 <li><a href=" https://9984995796.github.io/portfolio/" target="_blank">About Me</a></li>
+             </ul>
+         </div>
+     </header>   
+    </section>
+    <!--navbar-->
+    
+<section class="wallpaper" >
+    <h1 class="head"><span class="l">L</span>  OTTERY GAME</h1>
+    </section>
+    <section class="background" >
+    <section id="steps">
+        
+        <div class="steps-info">
+            <div class="step" >
+                <div class="step-card">
+                    <div class="step-front">
+                        
+                        <h1 class="step-front-heading">STEP 1</h1>
+                    </div>
+                    <div class="step-back">
+                        <h1 class="step-back-heading">html </h1>
+                        <p class="step-back-desc">
+                            Hypertext Markup Language (HTML) is the standard markup language for documents designed to be displayed in a web browser
+                        </p>
+                    </div>
+                </div>
+            </div>
 
-  <section>
+             <div class="step" >
+                <div class="step-card">
+                    <div class="step-front">
+                        
+                        <h1 class="step-front-heading">STEP 2</h1>
+                    </div>
+                    <div class="step-back">
+                        <h1 class="step-back-heading">html </h1>
+                        <p class="step-back-desc">
+                            Hypertext Markup Language (HTML) is the standard markup language for documents designed to be displayed in a web browser
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+             <div class="step" >
+                <div class="step-card">
+                    <div class="step-front">
+                   
+                        <h1 class="step-front-heading">STEP 3</h1>
+                    </div>
+                    <div class="step-back">
+                        <h1 class="step-back-heading">html </h1>
+                        <p class="step-back-desc">
+                            Hypertext Markup Language (HTML) is the standard markup language for documents designed to be displayed in a web browser
+                        </p>
+                    </div>
+                </div>
+            </div>
+        
+
+        
+
+        </div>
+    </section>
+
+    <section id="lottery" class="loterry-section">
+    
+    <h1 class="heading1">
+        <span>T</span><span>R</span><span>Y</span> <span>Y</span><span>O</span><span>U</span><span>R</span> <span>L</span><span>U</span><span>C</span> <span>K</span> <span>H</span><span>E</span><span>R</span><span>E</span> <span >!!</span>
+        
+        
+        
+     </h1>
+  
+<section>
+  
   
     
    
-    <button type="submit" class="generateBtn">Generate</button>
-    <div>
-    <h1 class="randomNumEl"></h1>
-  </div>
+    <button type="submit" class="generateBtn"><h1>Generate Your Lucky Noumber  </h1></button>
+    
+      <h2 class="randomNumEl"></h2>
+   
+    
+  
   <br>
   <br>
-    <label >ENTER YOUR NUMBER:</label>
+  
+    <label class="enter-num-label" >ENTER YOUR NUMBER:</label>
 
     
     <input type="number" class="enterNum"
       placeholder="enter your number here"  >
-      <button type="submit" class="enterNumBtn">Enter </button>
-  </section>
-<div class="winnerimg">
-  <img src="images/img.jfif" id="image1">
-</div>
+      <br>
+      <br>
+      <button type="submit" class="enterNumBtn">Check Winner </button>
+      </section>
   
 
-  <script src="index.js"></script>
-</body>
+   <div class="result">
+  <img src="" id="image1" class="winnerimg">
+  <p id="congratulation">congratulation </p>
+  <p id="fail">Better Luck next Time </p>
 
+</div>
+
+
+     
+    </section>
+    </section>
+<section id="contact">
+<footer id="footer" class="footer-container">
+      <h1 class="footer-contact-heading">contact with me</h1>
+      <p class="footer-contact-info">Email:kartikrocks009@gmail.com</p>
+       <p class="footer-contact-info">Mobile:9984995796</p>
+       <div class="footer-social-follow" >
+           <h1 class="footer-social-follow-heading">Follow Me</h1>
+           <div class="footer-social-icon">
+               <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="https://www.instagram.com/kartikm0091/?hl=en"><i class="fab fa-instagram"></i></a>
+           </div>
+       </div>
+  </footer>
+</section>
+
+
+
+
+<script src="main.js"></script>
+</body>
 </html>
