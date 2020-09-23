@@ -29,7 +29,7 @@ function generateRandomNum(e) {
     const randomNumEl = document.querySelector(".randomNumEl");
     randomNumEl.innerHTML = randomNum;
    // document.getElementById('result').value = randomNum;
-  
+  generateBtn.classList.add('afterclick');
 }
 function enterRandomNum(){
 	var image1= document.getElementById('image1');
@@ -40,6 +40,7 @@ num = enterNum ;
 //console.log(enterNum)
 if (num == 20 )
 	{
+
 		winnerimg.classList.toggle('open');
 		congratulation.classList.toggle('active');
 		image1.src ="images/img1.png";
@@ -67,20 +68,7 @@ if (num == 20 )
 
 	
 
-
-	
-
+                   }
 
 
 
-}
-
-
-
-
-document.onkeypress = function(e){
-	e = e || window.event;
-	if(e.keyCode == 13){
-		document.documentElement.classList.toggle('dark-mode');
-	}
-}

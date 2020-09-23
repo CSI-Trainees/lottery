@@ -1,4 +1,4 @@
-import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap');
+
 
 
 *{
@@ -19,12 +19,13 @@ background:#000000d1;
 }
 html{
 	font-size: 10px;
-	font-family:"montserrat",sans;
+	font-family: 'IBM Plex Sans', sans-serif;
   scroll-behavior: smooth;
 }
 .head{
    font-size:101px;
    color: white;
+   font-family: 'Playfair Display SC', serif;
 
 
 }
@@ -179,10 +180,11 @@ height:36px;
   font-size: 1.8rem;
   text-decoration: none;
   text-transform: uppercase;
-  color: white;
+  color: #ffec64;
   display: block;
   letter-spacing: .15rem;
   padding: 2rem 3rem ;
+  font-family: 'Ultra', serif;
 }
  .wallpaper{
   height: 80vh;
@@ -231,7 +233,7 @@ height:36px;
   font-size: 50px;
  }
   .step-front,
-    .step-back{
+  .step-back{
       position: absolute;
       left: 0;
       top: 0;
@@ -244,7 +246,7 @@ height:36px;
       justify-content: center;
       background-color: rgba(0,0,0,0.13);
       padding: 10px;
-    }
+          }
       .step-back{
       transform: rotateY(180deg);
      }
@@ -253,41 +255,30 @@ height:36px;
       }
        
 
-      }
+      
        .step-front-head,
-       .step-back-head
+       
       {
         font-size: 2.5rem;
         text-transform: uppercase;
           
       }
      
-      .step-back-desc{
+     .step-back-desc{
         font-size: 1.3rem;
         margin-top: 10px;
         text-align: center;
+        color: gold;
       }
-       .step:nth-child(2) .step-card .step-front{
+       
+      
+      .step-back{
+        background-color: #170c57;
+       }
         
-        background-size: cover;
-        position: relative;
-        
-      }
-      .step:nth-child(2) .step-card .step-front i{
-        color: white;
-      }
-      .step:nth-child(2) .step-card .step-back{
-        background-color: yellow;
-       }
-        .step:first-child .step-card .step-back{
-        background-color: yellow;
-       }
-         .step:last-child .step-card .step-back{
-        background-color: yellow;
-       }
 
-input {
- border: #00B3ff 3px solid;
+    input {
+    border: #00B3ff 3px solid;
     background: fixed;
     font-size: 20px;
     height: 33px;
@@ -312,6 +303,9 @@ input {
   cursor: pointer;
   transition: 0.3s ease-in-out;
 }
+ .generateBtn.afterclick{
+  display: none;
+ }
 
 .enter-num-label{
     color: #00b3ff;
@@ -324,7 +318,7 @@ input {
     background: black;
     color: #1cd879;
     margin: 12px 0px -10px 203px;
-   
+   padding: 5px;
     font-size: 34px;
 }
 section button:hover {
@@ -345,16 +339,14 @@ section button:hover {
 }
 
 
-.dark-mode{
-  filter:invert(1) hue-rotate(180deg);
-}
+
 .winnerimg{
   
   border-radius: 50%;
     background-size: cover;
     height: 161px;
     margin-top: 90px;
-    margin-left: 240px
+    margin-left: 227px;
   
 }
 .winner img{
@@ -365,20 +357,21 @@ section button:hover {
 .winnerimg.open{
   
 animation: spin 1.5s linear 1;
+
 }
 @keyframes spin{
-  100%{transform:rotate(360deg) scale(1.2);}
+  100%{transform:rotate(360deg) scale(1.1);}
   0%{transform:rotate(0deg) scale(1);}
 }
 #congratulation.active{
 color: white;
-    margin-left: 237px;
+    margin-left: 208px;
     margin-top: 9px;
     font-size: 34px;
 }
 #fail.fail-p{
   color: #f8fc04;
-    margin-left: 195px;
+    margin-left: 164px;
     margin-top: -15px;
     font-size: 34px;
 }
@@ -388,7 +381,7 @@ color: white;
   align-items: center;
 }
 .heading1{
-  font-family: 'Bad Script', cursive ;
+  font-family: 'Creepster', cursive;
   font-size: 50px;
 }
 .loterry-section h1 {
